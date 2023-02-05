@@ -1,0 +1,9 @@
+<div class="cat-container">
+  <button *ngIf="displayBtnAdoptCat" (click)="addCatToAdoptedList()">Adoptez moi !</button>
+<p class="photo" (mouseenter)="info = true" (mouseleave)="info = false">{{ cat.imgCat }}</p>
+<div *ngIf="info" class="info">
+  <p>{{ cat.name }}</p>
+  <p>{{ cat.race }}</p>
+  <p>{{ cat.birth | date : "dd /MM/YYYY" }}</p>
+</div>
+</div>

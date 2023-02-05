@@ -1,0 +1,13 @@
+.photo {
+  height: 25vh;
+  width: 10vw;
+  background-color: purple;
+}
+
+.cat-container {
+  border: solid 1px black;
+  width: fit-content;
+text-align: center;
+border-radius: 5px;
+}
+

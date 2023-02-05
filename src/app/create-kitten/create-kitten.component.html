@@ -1,0 +1,19 @@
+<form (ngSubmit)="createNewCat()" #catForm="ngForm">
+  <fieldset>
+    <label for="race">Race: </label>
+    <input type="text" id="race" name="race" [(ngModel)]="newCat.race" required/>
+  </fieldset>
+  <fieldset>
+    <label for="">Name: </label>
+    <input type="text" id="name" name="name" [(ngModel)]="newCat.name" required/>
+  </fieldset>
+  <fieldset>
+    <label for="birth">Birth: </label>
+    <input type="date" id="birth" name="birth" [(ngModel)]="newCat.birth" required/>
+  </fieldset>
+  <fieldset>
+    <label for="image">Image: </label>
+    <input type="text" id="image" name="image" [(ngModel)]="newCat.imgCat" required/>
+  </fieldset>
+  <button type="submit" [ngStyle]="{backgroundColor: catForm.valid ? 'green' : 'red'}">Créer</button>
+</form>
